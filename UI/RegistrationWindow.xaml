@@ -7,6 +7,27 @@
         mc:Ignorable="d"
         Title="RegistrationWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Center" Grid.Column="0" Grid.Row="0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Center" Grid.Column="0" Grid.Row="2" TextWrapping="Wrap" Text="Email" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Center" Grid.Column="0" Grid.Row="3" TextWrapping="Wrap" Text="Телефон" VerticalAlignment="Center"/>
+        <TextBox HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Center"/>
+        <TextBox HorizontalAlignment="Center" Grid.Column="2" Grid.Row="1" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Center"/>
+        <TextBox HorizontalAlignment="Center" Grid.Column="3" Grid.Row="2" TextWrapping="Wrap" Text="Email" VerticalAlignment="Center"/>
+        <TextBox HorizontalAlignment="Center" Grid.Column="4" Grid.Row="3" TextWrapping="Wrap" Text="Телефон" VerticalAlignment="Center"/>
+        <Button Grid.Column="1" Grid.Row="5" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Grid.Column="2" Grid.Row="4" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Window>
