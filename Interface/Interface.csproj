@@ -12,15 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\InMemory\InMemory.csproj" />
-    <ProjectReference Include="..\Interface\Interface.csproj" />
-    <ProjectReference Include="..\Services\Services.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="MainWindow.xaml">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Page>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
 </Project>

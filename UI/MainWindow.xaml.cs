@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using Interface;
+using Services;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -8,22 +10,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UI;
+using InMemory;
 
 namespace DiaryMood
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly IMoodRepository _moodRepository;
         public MainWindow()
         {
             InitializeComponent();
+            _moodRepository = new MoodRepository();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void StatisticsButton_Click(object sender, RoutedEventArgs e)
         {
-
+            var statisticsService = new StaticsService(_moodRepository);
+            var window = new StatisticWindow(statisticsService);
+            window.ShowDialog();
         }
     }
 }

@@ -13,6 +13,7 @@
             </TabItem>
             <TabItem Header="TabItem" HorizontalAlignment="Left" Margin="-2,-2,0,0" Width="132">
                 <Grid Background="#FFE5E5E5">
+                    <Button Content="Статистика" Width="120" Click="StatisticsButton_Click"/>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="59*"/>
                         <ColumnDefinition Width="338*"/>
